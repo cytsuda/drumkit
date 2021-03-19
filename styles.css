@@ -1,12 +1,13 @@
 body {
   text-align: center;
   background-color: #283149;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
   font-size: 5rem;
   color: #dbedf3;
-  font-family: "Arvo", cursive;
+  font-family: 'Lobster', cursive;
   text-shadow: 3px 0 #2c3e50;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -15,6 +16,13 @@ h1 {
 footer {
   color: #dbedf3;
   font-family: sans-serif;
+}
+.obs {
+  color: #95a5a6;
+  text-align: center;
+  font-size: 1.2em;
+  width: 20%;
+  margin: 32px auto;
 }
 
 .set {
@@ -26,36 +34,32 @@ footer {
   max-width: 464px;
 }
 
-.r, .u{
+.r,
+.u {
   grid-row: 1;
 }
-.r{
+.r {
   grid-column: 2;
 }
-.u{
+.u {
   grid-column: 4;
 }
-.d, .f, .b, .j, .k{
+.d,
+.f,
+.b,
+.j,
+.k {
   grid-row: 2;
 }
 
-.game-over {
-  background-color: #e74c3c;
-  opacity: 0.8;
-}
-
-button{
-  transition: all .05s ease-in-out;
-  box-shadow: -4px 4px 4px rgba(0,0,0,.2);
+button {
+  transition: all 0.05s ease-in-out;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 button.pressed {
-  box-shadow: -2px 2px 4px rgba(0,0,0,.2);
-  transform: translate(-2px,2px);
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translate(-2px, 2px);
   opacity: 0.8;
-}
-
-.red {
-  color: #e74c3c;
 }
 
 .drum {
@@ -69,7 +73,7 @@ button.drum {
   outline: none;
   border: 3px solid #34495e;
   font-size: 3rem;
-  font-family: "Arvo", cursive;
+  font-family: 'Righteous', cursive;
   font-weight: 900;
   color: #e74c3c;
   text-shadow: 3px 0 #34495e;
@@ -94,70 +98,7 @@ button.drum {
 }
 
 #Drum-Shadow {
-  opacity: 0.6;
-}
-
-#Snare {
-  cursor: pointer;
-}
-#Snare-Drum {
-}
-#Snare-Drum {
-}
-#Snare-Stand {
-}
-#Floor-Tom {
-}
-#Floor-Tom-Drum {
-}
-#Floor-Tom-Legs {
-}
-
-#Hi-Hat {
-}
-#Hi-Hat-Stand-Top {
-}
-#Hi-Hat-Bottom {
-  /* fill: blueviolet;
-  stroke: cyan; */
-}
-#Hi-Hat-Stand {
-}
-
-#Main-Kit {
-}
-
-#Toms {
-}
-#Tom-Rack {
-}
-#Tom-Left-All {
-}
-#Tom-Left-Drum {
-}
-#Tom-Right-All {
-}
-#Tom-Right-Drum {
-}
-
-#Kick {
-}
-#Kick-Stand {
-}
-#Kick-Drum {
-}
-
-#Crash {
-}
-#Crash-Stand-Top {
-}
-#Crash-Cymbol {
-}
-#Crash-Stand {
-}
-
-#hidden {
-  display: none;
+  opacity: 0.25;
 }
 
 #Logo {

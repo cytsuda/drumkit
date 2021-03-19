@@ -1,7 +1,17 @@
 # Drum Kit
 
-A simple project that help me understand DOM and how manipulate.
-Before this project I didn't have any clue what's going on with DOM.
-Quick, simple and yet efficient way to fast understand.
+[Github Live Page](https://cytsuda.github.io/drumkit/)
 
-[Github Page](https://cytsuda.github.io/drumkit/)
+Um simples projeto para entendimento e manipulação do DOM.
+
+## Animações
+
+As animações foram feitas com a utilização do [GreenStock](https://greensock.com/docs/v3/Installation)
+
+- As animações foram adicionadas com base no projeto da codrops.
+- Os SVG's também são baseados no Codrops.
+
+Referencias: 
+* [GreenStock](https://greensock.com/docs/v3/Installation)
+* [Codrops - DrumKit](https://tympanus.net/Tutorials/SVGDrums/);
+* 
