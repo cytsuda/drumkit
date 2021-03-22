@@ -14,4 +14,3 @@ As animações foram feitas com a utilização do [GreenStock](https://greensock
 Referencias: 
 * [GreenStock](https://greensock.com/docs/v3/Installation)
 * [Codrops - DrumKit](https://tympanus.net/Tutorials/SVGDrums/);
-* 

@@ -4,7 +4,11 @@ function crashAnimation() {
   var crashTimeLine = gsap.timeline();
   crashTimeLine
     .to(crashCymbol, 0.1, { rotation: 8, transformOrigin: "50% 50%" })
-    .to(crashCymbol, 1.5, { rotation: 0, transformOrigin: "50% 50%", ease: Elastic.easeOut.config(2.5, 0.3) });
+    .to(crashCymbol, 1.5, {
+      rotation: 0,
+      transformOrigin: "50% 50%",
+      ease: Elastic.easeOut.config(2.5, 0.3),
+    });
   return crashTimeLine;
 }
 
@@ -14,11 +18,34 @@ function rightTomDrumAnimation() {
   var rightTomDrumAll = document.getElementById("Tom-Right-All");
   var rightTomDrumTimeLine = gsap.timeline();
   rightTomDrumTimeLine
-    .to(rightTomDrum, 0.1, { scaleX: 1.04, transformOrigin: "50% 50%", ease: Expo.easeOut })
-    .to(rightTomDrum, 0.1, {scaleY: 0.95, transformOrigin: "50% 50%", ease: Expo.easeOut}, '0')
-    .to(rightTomDrumAll, 0.1, {rotation: 2.5, transformOrigin: "0 50%", ease: Elastic.easeOut}, '0')
-    .to(rightTomDrum, 0.4, {scale: 1, transformOrigin: "50% 50%", ease: Elastic.easeOut})
-    .to(rightTomDrumAll, 0.6, {rotation: 0, transformOrigin: "0 50%", ease: Elastic.easeOut}, '-=0.4');
+    .to(rightTomDrum, 0.1, {
+      scaleX: 1.04,
+      transformOrigin: "50% 50%",
+      ease: Expo.easeOut,
+    })
+    .to(
+      rightTomDrum,
+      0.1,
+      { scaleY: 0.95, transformOrigin: "50% 50%", ease: Expo.easeOut },
+      "0"
+    )
+    .to(
+      rightTomDrumAll,
+      0.1,
+      { rotation: 2.5, transformOrigin: "0 50%", ease: Elastic.easeOut },
+      "0"
+    )
+    .to(rightTomDrum, 0.4, {
+      scale: 1,
+      transformOrigin: "50% 50%",
+      ease: Elastic.easeOut,
+    })
+    .to(
+      rightTomDrumAll,
+      0.6,
+      { rotation: 0, transformOrigin: "0 50%", ease: Elastic.easeOut },
+      "-=0.4"
+    );
   return rightTomDrumTimeLine;
 }
 
@@ -28,11 +55,34 @@ function leftTomDrumAnination() {
   var leftTomDrumAll = document.getElementById("Tom-Left-All");
   var leftTomDrumTimeLine = gsap.timeline();
   leftTomDrumTimeLine
-    .to(leftTomDrum, 0.1, {scaleX: 1.04, transformOrigin: "50% 50%", ease: Expo.easeOut})
-    .to(leftTomDrum, 0.1, {scaleY: 0.95, transformOrigin: "50% 50%", ease: Expo.easeOut}, '0')
-    .to(leftTomDrumAll, 0.1, {rotation: -2.5, transformOrigin: "100% 50%", ease: Elastic.easeOut}, '0')
-    .to(leftTomDrum, 0.4, {scale: 1, transformOrigin: "50% 50%", ease: Elastic.easeOut})
-    .to(leftTomDrumAll, 0.6, {rotation: 0, transformOrigin: "100% 50%", ease: Elastic.easeOut}, '-=0.4');
+    .to(leftTomDrum, 0.1, {
+      scaleX: 1.04,
+      transformOrigin: "50% 50%",
+      ease: Expo.easeOut,
+    })
+    .to(
+      leftTomDrum,
+      0.1,
+      { scaleY: 0.95, transformOrigin: "50% 50%", ease: Expo.easeOut },
+      "0"
+    )
+    .to(
+      leftTomDrumAll,
+      0.1,
+      { rotation: -2.5, transformOrigin: "100% 50%", ease: Elastic.easeOut },
+      "0"
+    )
+    .to(leftTomDrum, 0.4, {
+      scale: 1,
+      transformOrigin: "50% 50%",
+      ease: Elastic.easeOut,
+    })
+    .to(
+      leftTomDrumAll,
+      0.6,
+      { rotation: 0, transformOrigin: "100% 50%", ease: Elastic.easeOut },
+      "-=0.4"
+    );
   return leftTomDrumTimeLine;
 }
 
@@ -40,19 +90,45 @@ function floorTomAnimation() {
   var floorTom = document.getElementById("Floor-Tom");
   var floorTomTimeLine = gsap.timeline();
   floorTomTimeLine
-    .to(floorTom, 0.1, { scaleX: 1.02, transformOrigin: "50% 50%", ease: Expo.easeOut })
-    .to(floorTom, 0.1, {scaleY: 0.95, transformOrigin: "50% 100%", ease: Expo.easeOut}, '0')
-    .to(floorTom, 0.4, {scale: 1, transformOrigin: "50% 100%", ease: Elastic.easeOut});
+    .to(floorTom, 0.1, {
+      scaleX: 1.02,
+      transformOrigin: "50% 50%",
+      ease: Expo.easeOut,
+    })
+    .to(
+      floorTom,
+      0.1,
+      { scaleY: 0.95, transformOrigin: "50% 100%", ease: Expo.easeOut },
+      "0"
+    )
+    .to(floorTom, 0.4, {
+      scale: 1,
+      transformOrigin: "50% 100%",
+      ease: Elastic.easeOut,
+    });
   return floorTomTimeLine;
 }
 
 function snareAnimation() {
-	var snareDrum = document.getElementById("Snare-Drum");
+  var snareDrum = document.getElementById("Snare-Drum");
   var snareAnimationTimeLine = gsap.timeline();
   snareAnimationTimeLine
-    .to(snareDrum, 0.1, { scaleX: 1.04, transformOrigin: "50% 50%", ease: Expo.easeOut })
-    .to(snareDrum, 0.1, {scaleY: 0.9, transformOrigin: "50% 100%", ease: Expo.easeOut}, '0')
-    .to(snareDrum, 0.4, {scale: 1, transformOrigin: "50% 100%", ease: Elastic.easeOut});
+    .to(snareDrum, 0.1, {
+      scaleX: 1.04,
+      transformOrigin: "50% 50%",
+      ease: Expo.easeOut,
+    })
+    .to(
+      snareDrum,
+      0.1,
+      { scaleY: 0.9, transformOrigin: "50% 100%", ease: Expo.easeOut },
+      "0"
+    )
+    .to(snareDrum, 0.4, {
+      scale: 1,
+      transformOrigin: "50% 100%",
+      ease: Elastic.easeOut,
+    });
   return snareAnimationTimeLine;
 }
 
@@ -60,18 +136,33 @@ function kickAnimation() {
   var kickDrumAll = document.getElementById("Kick");
   var kickTimeLine = gsap.timeline();
   kickTimeLine
-    .to(kickDrumAll, 0.1, { scale: 1.02, transformOrigin: "50% 100%", ease: Expo.easeOut })
-    .to(kickDrumAll, 0.4, { scale: 1, transformOrigin: "50% 100%", ease: Elastic.easeOut });
+    .to(kickDrumAll, 0.1, {
+      scale: 1.02,
+      transformOrigin: "50% 100%",
+      ease: Expo.easeOut,
+    })
+    .to(kickDrumAll, 0.4, {
+      scale: 1,
+      transformOrigin: "50% 100%",
+      ease: Elastic.easeOut,
+    });
   return kickTimeLine;
 }
 
 function hiHatAnimation() {
-	var hiHatTop = document.getElementById("Hi-Hat-Top");
-	var hiHatBottom = document.getElementById("Hi-Hat-Bottom");
+  var hiHatTop = document.getElementById("Hi-Hat-Top");
+  var hiHatBottom = document.getElementById("Hi-Hat-Bottom");
   var hiHatTimeLine = gsap.timeline();
   hiHatTimeLine
-    .to([hiHatTop, hiHatBottom], 0.1, { rotation: -4, transformOrigin: "50% 50%" })
-    .to([hiHatTop, hiHatBottom], 0.6, { rotation: 0, transformOrigin: "50% 50%", ease: Elastic.easeOut.config(1.5, 0.2) });
+    .to([hiHatTop, hiHatBottom], 0.1, {
+      rotation: -4,
+      transformOrigin: "50% 50%",
+    })
+    .to([hiHatTop, hiHatBottom], 0.6, {
+      rotation: 0,
+      transformOrigin: "50% 50%",
+      ease: Elastic.easeOut.config(1.5, 0.2),
+    });
   return hiHatTimeLine;
 }
 
@@ -134,8 +225,21 @@ function buttonAnimation(checkKey) {
   }
 }
 
-var array = document.getElementsByClassName("drum");
+window.onload = function () {
+  new Audio("sounds/crash.mp3");
+  new Audio("sounds/floorTom.mp3");
+  new Audio("sounds/bigRackTom.mp3");
+  new Audio("sounds/smallRackTom.mp3");
+  new Audio("sounds/snare.mp3");
+  new Audio("sounds/hiHatClosed.mp3");
+  new Audio("sounds/kick.mp3");
+  document.getElementById("fullscreen").style.opacity = "0";
+  setTimeout(function () {
+    document.getElementById("fullscreen").style.display = "none";
+  }, 1000);
+};
 
+var array = document.getElementsByClassName("drum");
 for (var i = 0; i < array.length; i++) {
   array[i].addEventListener("click", function () {
     var classKey = this.classList;
@@ -147,16 +251,3 @@ for (var i = 0; i < array.length; i++) {
 document.addEventListener("keydown", function (event) {
   playSound(event.key);
 });
-
-/*
-#Crash {
-}
-#Crash-Stand-Top {
-}
-#Crash-Cymbol {
-}
-#Crash-Stand {
-}
-
-
-*/
